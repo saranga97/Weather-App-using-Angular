@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
 
-  apiKey = 'f0de6a752a286d7ed276284f5c445202';
+  apiKey = environment.apiKey;
 
   constructor(private http: HttpClient) { }
 
